@@ -12,12 +12,6 @@ var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
-//Browser Sync + Watching
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        proxy: "jrhoades.dev"
-    });
-});
 
 // Default tasks
 gulp.task('sass',function() {
